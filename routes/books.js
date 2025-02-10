@@ -3,7 +3,7 @@ const Book = require('../models/book');
 
 const router = express.Router();
 
-// 🚀 Obtener todos los libros
+// Obtener todos los libros
 router.get('/', async (req, res) => {
   try {
     const books = await Book.findAll();
@@ -13,7 +13,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-// 🔍 Buscar un libro por ID
+//  Buscar un libro por ID
 router.get('/:id', async (req, res) => {
   try {
     const book = await Book.findByPk(req.params.id);
@@ -27,7 +27,7 @@ router.get('/:id', async (req, res) => {
   }
 });
 
-// 🆕 Registrar un nuevo libro
+// Registrar un nuevo libro
 router.post('/', async (req, res) => {
   try {
     const newBook = await Book.create(req.body);
@@ -37,7 +37,7 @@ router.post('/', async (req, res) => {
   }
 });
 
-// ✏️ Actualizar un libro
+//  Actualizar un libro
 router.put('/:id', async (req, res) => {
   try {
     const book = await Book.findByPk(req.params.id);

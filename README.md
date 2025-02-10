@@ -80,6 +80,16 @@ npm run dev
 ### 🗂️ **3 Configurar Variables de Entorno:**
 (POR CORREO)
 
+---
+
+## 🎥 Demostración de la Aplicación
+
+[![Ver Video](https://img.shields.io/badge/Ver%20Video-Demo-blue)](https://drive.google.com/file/d/1eo8IuqlLNptogb3lUjGeRHEfhmb70cU8/view?usp=sharing)
+
+Haz clic en el enlace para ver el funcionamiento completo de la aplicación.
+
+---
+
 
 ## 🚀 Uso de la Aplicación
 
