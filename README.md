@@ -135,13 +135,6 @@ DELETE /api/books/:id
 
 ---
 
-## 🔐 Variables de Entorno
-
-Asegúrate de configurar correctamente el archivo `.env` tanto en el frontend como en el backend.
-
-**Importante:** No compartas este archivo en repositorios públicos.
-
----
 
 ## 👤 Autor
 
