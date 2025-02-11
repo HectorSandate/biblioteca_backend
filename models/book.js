@@ -9,22 +9,22 @@ const Book = sequelize.define('Book', {
   },
   name: {
     type: DataTypes.STRING,
-    allowNull: false, // ❌ No permite valores nulos
+    allowNull: false,
     validate: {
       notEmpty: {
-        msg: 'El nombre del libro no puede estar vacío.' // ✅ Mensaje de error personalizado
+        msg: 'El nombre del libro no puede estar vacío.'
       },
     },
   },
   isbn: {
     type: DataTypes.STRING,
-    allowNull: false, //  No permite valores nulos
+    allowNull: false,
     unique: {
-      msg: 'El ISBN debe ser único.' // ✅ Asegura que no haya duplicados
+      msg: 'El ISBN debe ser único.'
     },
     validate: {
       notEmpty: {
-        msg: 'El ISBN no puede estar vacío.' // ✅ Valida que no esté vacío
+        msg: 'El ISBN no puede estar vacío.'
       },
     },
   },
@@ -40,6 +40,8 @@ const Book = sequelize.define('Book', {
     type: DataTypes.STRING,
     allowNull: true,
   }
+}, {
+  timestamps: false  // ✅ Configuración correcta para desactivar createdAt y updatedAt
 });
 
 module.exports = Book;
